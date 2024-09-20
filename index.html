@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Weather App</title>
+
+    <!-- Fontawesome Icons v6.2.0 -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-tangaroaTR">
+
+    <div class="top-10 container relative w-[400px] h-[105px] bg-white py-7 px-8 overflow-hidden rounded-2xl duration-500 ease-out">
+
+        <div class="search-box w-full h-min-content flex items-center justify-between">
+            <i class="fa-solid fa-location-dot absolute text-3xl text-tangaroaTR"></i>
+            <input type="text" placeholder="Enter Your Location" class="w-[80%] text-2xl  uppercase pl-8 text-tangaroa placeholder:capitalize placeholder:text-xl">
+            <button class="fa-solid fa-magnifying-glass cursor-pointer w-12 h-12 rounded-full duration-400 text-tangaroa bg-[#DFF6FF] hover:text-white hover:bg-tangaroaTR text-2xl duration-200"></button>
+        </div>
+
+        <div class="not-found w-full text-center mt-12 transform mx-auto ">
+            <img src="images/404.png" alt="..." class="w-[70%] mx-auto ">
+            <p class="text-xl font-medium mt-3 text-tangaroaTR mx-auto ">Oops! Invalid Location :/</p>
+        </div>
+
+        <div class="weather-box text-center mx-auto ">
+            <img src="" alt="..." class="w-[60%] mt-7 mx-auto ">
+            <p class="temperature relative font-semibold text-6xl mt-10 -ml-4 text-tangaroa text-center"></p>
+            <p class="description font-medium text-2xl capitalize text-tangaroaTR text-center"></p>
+        </div>
+
+        <div class="weather-details w-full flex justify-between mt-8">
+            <div class="humidity flex items-center w-1/2 h-24 pl-5 justify-start">
+                <i class="fa-solid fa-water text-2xl mr-2.5 mt-1.5"></i>
+                <div class="text">
+                    <span class="text-xl font-medium text-tangaroa"></span>
+                    <p class="text-sm font-medium text-tangaroaTR">Humidity</p>
+                </div>
+            </div>
+            <div class="wind flex items-center w-1/2 h-24 pr-5 justify-end">
+                <i class="fa-solid fa-wind text-2xl mr-2.5 mt-1.5"></i>
+                <div class="text">
+                    <span class="text-xl font-medium text-tangaroa"></span>
+                    <p class="text-sm font-medium text-tangaroaTR">Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- New Section for Weather Cards -->
+    <section class="weather-cards-section py-10 w-full flex justify-center">
+        <div class="weather-cards container flex justify-between gap-5">
+            <!-- Weather Card 1 -->
+            <div class="weather-box text-center">
+                <p class="date text-lg text-tangaroaTR">(2024-09-16)</p>
+                <img src="images/cloud.png" alt="Cloudy" class="w-[60%] mx-auto">
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Temp: 5.67°C</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Wind: 2.77 M/S</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Humidity: 76%</p>
+                <!-- <p class="description text-lg capitalize text-tangaroaTR">Cloudy</p> -->
+            </div>
+            <!-- Weather Card 2 -->
+            <div class="weather-box text-center">
+                <p class="date text-lg text-tangaroaTR">(2024-09-17)</p>
+                <img src="images/clear.png" alt="Clear" class="w-[60%] mx-auto">
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Temp: 5.67°C</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Wind: 2.77 M/S</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Humidity: 76%</p>
+                <!-- <p class="description text-lg capitalize text-tangaroaTR">Clear</p> -->
+            </div>
+            <!-- Weather Card 3 -->
+            <div class="weather-box text-center">
+                <p class="date text-lg text-tangaroaTR">(2024-09-18)</p>
+                <img src="images/rain.png" alt="Rain" class="w-[60%] mx-auto">
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Temp: 5.67°C</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Wind: 2.77 M/S</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Humidity: 76%</p>
+                <!-- <p class="description text-lg capitalize text-tangaroaTR">Rain</p> -->
+            </div>
+            <!-- Weather Card 4 -->
+            <div class="weather-box text-center">
+                <p class="date text-lg text-tangaroaTR">(2024-09-19)</p>
+                <img src="images/snow.png" alt="Snow" class="w-[60%] mx-auto">
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Temp: 5.67°C</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Wind: 2.77 M/S</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Humidity: 76%</p>
+                <!-- <p class="description text-lg capitalize text-tangaroaTR">Snow</p> -->
+            </div>
+            <!-- Weather Card 5 -->
+            <div class="weather-box text-center">
+                <p class="date text-lg text-tangaroaTR">(2024-09-20)</p>
+                <img src="images/mist.png" alt="Mist" class="w-[60%] mx-auto">
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Temp: 5.67°C</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Wind: 2.77 M/S</p>
+                <p class="temperature font-semibold text-4xl mt-5 text-tangaroa">Humidity: 76%</p>
+                <!-- <p class="description text-lg capitalize text-tangaroaTR">Mist</p> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+   
+
+    <!-- JS File -->
+    <script src="js/script.js" type="text/javascript"></script>
+    <script>
+        tailwind.config = {
+            content: ['./src/**/*.{html,js}'],
+            theme: {
+                extend: {
+                    colors: {
+                        'tangaroa': '#06283D',
+                        'tangaroaTR' : '#06283Ddc'
+                    }
+                }
+            },
+        }
+
+
+    
+    </script>
+
+</body>
+
+</html>
